@@ -328,8 +328,8 @@ header .btn {
 
   .oct,.oct div{
     transform:rotate(-90deg);
-    width:280px;
-    height:280px;
+    width:320px;
+    height:320px;
     overflow:hidden;
   }
 
@@ -338,9 +338,35 @@ header .btn {
   }
 
 .oct div div {
-    background: url(../images/ces.jpg);
+    background: url(../images/ces2.png);
     background-size: contain;
 }
+
+.skills_icon {
+    justify-content: left;
+    width: 28px;
+    height: auto;
+}
+
+.skills {
+    width: 140px;
+    background-color:  #00cccc;
+    border: 1px solid none;
+    padding: 10px 5px 10px 15px;
+}
+
+.skills p {
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+.express { 
+    width: 200px;
+    background-color:  #00cccc;
+    border: 1px solid none;
+    padding: 10px;
+}
+
 
 
 /***************************/
