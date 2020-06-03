@@ -75,8 +75,8 @@ section {
 
 
 img {
-    height: 310px;
-    width: 420px;
+    max-height: 310px;
+    max-width: 420px;
 }
 
 h1 {
@@ -210,14 +210,19 @@ header .btn {
     background-color:#000;
 }
 
+.intro_box_text {
+    position: absolute;
+    text-align: center;
+    width: 30em;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
 
 .intro_box h3, .line-1{
-    position: relative;
-    color:#fff;
-    top: 35%;  
-    width: 20em;
     margin: 0 auto;
-    text-align: center;
+    color:#fff;   
     transform: translateY(-50%);    
 }
 
@@ -231,14 +236,14 @@ header .btn {
 /***************************/
 
 .arrow-down a  {
-    position: absolute;
-    font-size: 1.2rem;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute; 
+    font-size: 1rem;    
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     cursor: pointer;
     border: 1.5px solid;
-    padding: 0.6rem;
+    padding: 0.5rem;
+    margin-top: 3rem;
 }
 
 .arrow-down a:hover {
