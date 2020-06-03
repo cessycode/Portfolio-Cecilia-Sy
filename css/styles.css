@@ -211,6 +211,11 @@ a:visited {
     }
   }
 
+  @media only screen and (min-width: 600px) {
+    .sticky .main-nav {display: block;}
+    .sticky .mobile-nav {display: none;}
+}
+
 
 /***************************/
 /*         HEADER          */
