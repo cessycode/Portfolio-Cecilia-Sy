@@ -1,6 +1,6 @@
 /* Big tablets to 1200px (widths smaller than 1140px row) */
 @media only screen and (max-width: 1200px){
-    .slogan-text-box {
+    .intro_box_text {
         width: 100%;   
         padding: 0 2%;
     }

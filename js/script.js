@@ -12,6 +12,21 @@ $(document).ready(function() {
         offset: '60px'
     });
 
+    /* Mobile Navi */
+    $('.js--mobile-nav').click(function() {
+        var main = $('.js--main-nav');
+        var icon = $('.js--mobile-nav i');
+
+        main.slideToggle(200);
+
+        if (icon.hasClass('ion-md-menu')){
+            icon.addClass('ion-md-close');
+            icon.removeClass('ion-md-menu');
+        } else {
+            icon.addClass('ion-md-menu');
+            icon.removeClass('icon ion-md-close');
+        }
+    });
 
      /*******   ANIMATE HEADERS  *******/
     $('.js--wp-header').waypoint(function(direction) {
@@ -62,8 +77,6 @@ $(document).ready(function() {
         offset: '50%'
     });
 
-
-
     /*******   ANIMATE HEXAGON  ********/
 
     $('.js--hexa-1').waypoint(function(direction){
@@ -113,8 +126,6 @@ $(document).ready(function() {
     }, {
         offset: '50%'
     });
-
-
 
     /*******    ANIMATE ABOUT ME AND PIC/LOGO      *******/
 
@@ -214,8 +225,6 @@ $(document).ready(function() {
     });
 
 
-
-
     /*  NAVIGATION & BUTTON Scrolls */
 
     // Select all links with hashes
@@ -255,10 +264,6 @@ $(document).ready(function() {
             }
         }
     });
-
-
-
-
 });
 
 // Header intro-page with particles.js

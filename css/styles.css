@@ -119,7 +119,17 @@ a:visited {
 /*        MAIN NAV         */
 /***************************/       
 
-.main-nav, .nav-brand {
+.main-nav, .nav-brand, .icon{
+    display: none;
+}
+
+/***** Mobile Nav  *****/
+.sticky .mobile-nav {
+    float: right;
+    color: #fff;
+    font-size: 200%;
+    margin-top: 30px;
+    cursor: pointer;
     display: none;
 }
 
@@ -132,18 +142,14 @@ a:visited {
     width: 100%;
     background-color:rgba(27, 36, 47, 0.92);
     box-shadow: 0 2px 2px  #ff0066;
-    float: right;
-    list-style: none;
-    float: right;
-    list-style: none;
     z-index: 9999;
 }
-
 
 .sticky .main-nav {
     margin-top: 15px;
     float: right;
     list-style: none;
+    color: #fff;
 }
 
 .sticky .main-nav li, .brand {
@@ -187,6 +193,23 @@ a:visited {
     color: #fff;
     font-weight: normal;
 }
+
+.sticky .mobile-nav .ion-md-close,
+.sticky .mobile-nav .ion-md-menu {
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .sticky .main-nav {display: none;}
+    .sticky .mobile-nav {display: block;}
+    .sticky .mobile-nav .icon {
+        display: block;
+    }
+
+    .sticky .main-nav li {
+        display: inline;
+    }
+  }
 
 
 /***************************/
