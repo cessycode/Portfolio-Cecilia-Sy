@@ -75,8 +75,6 @@ section {
 
 
 img {
-    /* max-height: 310px;
-    max-width: 420px; */
     width: 700px;
     height: 420px;
     
@@ -229,14 +227,17 @@ header .btn {
 }
 
 
-.intro-box h3, .line-1{
+.intro-box h3, .intro-box-text h1{
     margin: 0 auto;
     color:#fff;   
     transform: translateY(-50%);    
 }
 
-.line-1 {
+.intro-box-text h1 {
+    text-transform: uppercase;
     color: #00e6e6;    
+    font-size: 280%;
+    letter-spacing: 0.1em;   
 }
 
 
@@ -389,8 +390,6 @@ header .btn {
 
 .container {
     width: 100%;
-    /* margin-left: 12.5%;
-    margin-right: 12.5%; */
 }
 
 .showcase {
@@ -557,6 +556,8 @@ hr:nth-of-type(1) {
 }
 
 .section-blogs img {
+    max-height: 310px;
+    max-width: 420px; 
     width: 100%;
     margin-bottom: 20px;
 }
