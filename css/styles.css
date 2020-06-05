@@ -73,7 +73,6 @@ section {
     line-height: 0.25;
 }
 
-
 img {
     width: 700px;
     height: 420px;
@@ -443,12 +442,6 @@ header .btn {
 .card img {
     width: 100%; 
     display: block;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.card .card-desc {
-    visibility: hidden;
 }
 
 .card:hover img {
@@ -456,9 +449,6 @@ header .btn {
    display: none;
 }
 
-.card:hover .card-desc {
-    visibility: visible;
-}
 
 .card:hover {
     background-color:#00e6e6;
@@ -469,7 +459,7 @@ header .btn {
 /*****   MODALS   ******/
 
 .modal img {
-    width: 800px;
+    width: 700px;
     height: 420px;
 }
 
