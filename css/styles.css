@@ -75,8 +75,11 @@ section {
 
 
 img {
-    max-height: 310px;
-    max-width: 420px;
+    /* max-height: 310px;
+    max-width: 420px; */
+    width: 700px;
+    height: 420px;
+    
 }
 
 h1 {
@@ -209,14 +212,14 @@ header .btn {
     font-size: 1.5rem;
 }
 
-.intro_box {
+.intro-box {
     overflow: hidden;
     height: calc(100vh - 8em);
     padding: 4em;
     background-color:#000;
 }
 
-.intro_box_text {
+.intro-box-text {
     position: absolute;
     text-align: center;
     width: 30em;
@@ -226,7 +229,7 @@ header .btn {
 }
 
 
-.intro_box h3, .line-1{
+.intro-box h3, .line-1{
     margin: 0 auto;
     color:#fff;   
     transform: translateY(-50%);    
@@ -271,6 +274,8 @@ header .btn {
 	animation-iteration-count: infinite;
 }
 
+
+
 @keyframes pointer {
 	0%, 100% {
 		transform: translateY(0);
@@ -282,9 +287,8 @@ header .btn {
 		transform: translateY(10px);
 	}
 }
-
-
-.span-1-of-4 .fas, .span-1-of-4 .far, .span-1-of-4 .icon {
+                       
+.span-1-of-4 .fas, .span-1-of-4 .far, ion-icon {
     color:#fff; 
     font-size: 180%;
 }
@@ -297,7 +301,6 @@ header .btn {
 /***********************/
 /*       ABOUT         */
 /***********************/   
-
 
 .hexagon {
     width: 100px;
@@ -351,17 +354,16 @@ header .btn {
     background-size: contain;
 }
 
-.skills_icon {
-    justify-content: left;
-    width: 28px;
-    height: auto;
+.skills {
+    background-color: #00cccc;
+    border: 1px solid none;
+    padding: 8px 0;
+    text-indent: 16%;
 }
 
-.skills {
-    width: 140px;
-    background-color:  #00cccc;
-    border: 1px solid none;
-    padding: 10px 5px 10px 15px;
+.skills-icon {
+    max-width: 28px;
+    height: auto;
 }
 
 .skills p {
@@ -369,6 +371,12 @@ header .btn {
     font-weight: bolder;
 }
 
+.span-1-of-2 h3 {
+    text-align: center;
+    padding: 10px 15px;    
+    background-color: #00cccc;
+    text-transform: uppercase;
+}
 
 
 /***************************/
@@ -381,8 +389,8 @@ header .btn {
 
 .container {
     width: 100%;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
+    /* margin-left: 12.5%;
+    margin-right: 12.5%; */
 }
 
 .showcase {
@@ -392,7 +400,7 @@ header .btn {
 .card {
     position: relative;
     display: flex;
-    width: 25%;
+    width: 33.33333333333333%;
     padding: 0;
     overflow: hidden;
 }
@@ -401,7 +409,6 @@ header .btn {
 .card-desc{
     visibility: none;
     text-align: center;
-
     /* center elements vertically */
     margin: auto;
 }
@@ -423,7 +430,6 @@ header .btn {
     color: #1B242F;
 }
 
-
 .card-desc button:hover{
     background-color: #ff0066;
     font-weight: normal;
@@ -435,10 +441,15 @@ header .btn {
     color: #fff;
 }
 
-
 .card img {
-    width: 100%;
+    width: 100%; 
     display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.card .card-desc {
+    visibility: hidden;
 }
 
 .card:hover img {
@@ -450,7 +461,6 @@ header .btn {
     visibility: visible;
 }
 
-
 .card:hover {
     background-color:#00e6e6;
     margin: 0;
@@ -460,7 +470,7 @@ header .btn {
 /*****   MODALS   ******/
 
 .modal img {
-    width: 700px;
+    width: 800px;
     height: 420px;
 }
 

@@ -1,95 +1,15 @@
 /* Big tablets to 1200px (widths smaller than 1140px row) */
 @media only screen and (max-width: 1200px){
-    .intro_box_text {
-        width: 100%;   
+    .intro-box-text {
+        width: 100%;
         padding: 0 2%;
     }
 
     .row { padding: 0 2%; }
-
 }
-/* Small tablets to big tables from 768px - 1023px */
+
+/* Small tablets to big tablets from 768px - 1023px */
 @media only screen and (max-width: 1023px){
     body {font-size: 18px; }
     section { padding: 60px 0;}
 }
-
-/* Small phones to small tablets from 481px to 767px */
-@media only screen and (max-width: 767px){
-    body { font-size: 16px; }
-    section { padding: 30px 0; }
-    
-    .row,
-    .intro_box_text { padding: 0 4%; }
-
-    .col { 
-        width: 100%;
-        margin: 0 0 4% 0;
-    }
-
-    .sticky .main-nav {
-        float: left;
-        margin-top: 30px;
-        margin-left: 25px;
-    }
-
-    .sticky .main-nav li {
-        display: block;
-    }
-
-    .sticky .main-nav li a:link,
-    .sticky .main-nav li a:visited {
-        display: block;
-        border: 0;
-        padding: 10px 0;
-        font-size: 100%;
-    }
-
-    .sticky .main-nav { margin-top: 10px; }
-
-    .sticky .main-nav li a:link,
-    .sticky .main-nav li a:visited { padding: 10px 0; }
-    .sticky .mobile-nav { margin-top: 10px; }
-    .sticky .mobile-nav i { color: #fff; }
-
-
-    h1 { font-size: 180%; }
-    h2 { font-size: 150%; }
-    
-    .span-1-of-3 li {
-        justify-items: center;
-    }
-    
-}
-
-
-/* Small phones from 0 to 480px */
-@media only screen and (max-width: 480px) {
-    @media only screen and (max-width: 480px) {
-        section { padding: 25px 0; }
-    }
-
-    input[type=sumbit]{
-        text-align: center;
-    }
-    
-}
-
-@media screen and (max-width: 600px) {
-    .sticky .main-nav {display: none;}
-    .sticky .mobile-nav {display: block;}
-    .sticky .mobile-nav .icon {
-        display: block;
-    }
-
-    .sticky .main-nav li {
-        display: inline;
-    }
-  }
-
-  @media only screen and (min-width: 600px) {
-    .sticky .main-nav {display: block;}
-    .sticky .mobile-nav {display: none;}
-}
-
-
