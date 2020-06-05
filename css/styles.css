@@ -119,18 +119,18 @@ a:visited {
 /*        MAIN NAV         */
 /***************************/       
 
-.main-nav, .nav-brand, .icon{
+.main-nav, .nav-brand, .mobile-nav {
     display: none;
 }
 
 /***** Mobile Nav  *****/
-.sticky .mobile-nav {
+.mobile-nav {
     float: right;
     color: #fff;
     font-size: 200%;
-    margin-top: 30px;
+    margin-top: 15px;
     cursor: pointer;
-    display: none;
+    display: none; 
 }
 
 /**** STICKY NAV *******/
@@ -150,6 +150,7 @@ a:visited {
     float: right;
     list-style: none;
     color: #fff;
+    display: block;
 }
 
 .sticky .main-nav li, .brand {
@@ -174,8 +175,6 @@ a:visited {
     color: #ff0066;
     border-bottom: 2px solid  #ff0066;
 }
-
-.sticky .main-nav {display: block;}
 
 .sticky .nav-brand {
     float: left;
