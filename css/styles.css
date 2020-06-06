@@ -58,7 +58,7 @@ section {
 }
 
 img {
-    width: 700px;
+    width: 400px;
     height: 420px;
     
 }
@@ -81,9 +81,8 @@ h2 {
 }
 
 h3 {
-    /* font-family: 'Carter One', cursive; */
     letter-spacing: 2px;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 /*----------LINKS-----------*/
@@ -254,8 +253,6 @@ header .btn {
 	animation-iteration-count: infinite;
 }
 
-
-
 @keyframes pointer {
 	0%, 100% {
 		transform: translateY(0);
@@ -314,7 +311,6 @@ header .btn {
     border-top: 25px solid  #00cccc;
 }
 
-
 .about-contents {
     display: grid;
     gap: 20px;  
@@ -326,7 +322,6 @@ header .btn {
 }
 
 .hexa-desc {
-    margin-top: 50px;
     text-align: center;
 }
 
@@ -348,8 +343,8 @@ header .btn {
 
 .oct,.oct div{
     transform:rotate(-90deg);
-    width:320px;
-    height:320px;
+    width:280px;
+    height:280px;
     overflow:hidden;
 }
 
@@ -362,12 +357,33 @@ header .btn {
     background-size: contain;
 }
 
-.skills {
-    background-color: #00cccc;
-    border: 1px solid none;
-    padding: 8px 0;
-    text-indent: 16%;
+.profile {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 40px;
 }
+
+.profile h3 {
+    text-align: center;
+    padding: 10px 15px;    
+    background-color: #00cccc;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.skills li {
+    list-style-type: none;
+    background-color:  #00cccc;
+    padding: 10px;
+}
+
+.skills {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 
 .skills-icon {
     max-width: 28px;
@@ -377,15 +393,8 @@ header .btn {
 .skills p {
     font-size: 0.9rem;
     font-weight: bolder;
-}
-
-.span-1-of-2 h3 {
-    text-align: center;
-    padding: 10px 15px;    
     background-color: #00cccc;
-    text-transform: uppercase;
 }
-
 
 /***************************/
 /*        PROJECTS         */
@@ -393,10 +402,6 @@ header .btn {
      
 .section-projects {
     background-color: #ccffff;
-}
-
-.container {
-    width: 100%;
 }
 
 .showcase {
@@ -411,11 +416,9 @@ header .btn {
     overflow: hidden;
 }
 
-
 .card-desc{
-    visibility: none;
+    visibility: hidden;
     text-align: center;
-    /* center elements vertically */
     margin: auto;
 }
 
@@ -448,7 +451,9 @@ header .btn {
 }
 
 .card img {
-    width: 100%; 
+    max-height: 310px;
+    max-width: 420px; 
+    width: 100%;
     display: block;
 }
 
@@ -457,6 +462,9 @@ header .btn {
    display: none;
 }
 
+.card:hover .card-desc {
+    visibility: visible;
+}
 
 .card:hover {
     background-color:#00e6e6;
@@ -553,24 +561,28 @@ hr:nth-of-type(1) {
     line-height: 1.4;
 }
 
-.section-blogs img {
+.blogs {
+    display: flex;
+}
+
+.blogs img {
     max-height: 310px;
     max-width: 420px; 
     width: 100%;
     margin-bottom: 20px;
 }
 
-.section-blogs h4 {
+.blogs h4 {
     margin-bottom: 10px;
 }
 
-.section-blogs hr {
+.blogs hr {
     color: #1B242F;
     width:20%;
     margin: 15px 0;
 }
 
-.section-blogs p {
+.blogs p {
     font-size: .8rem;
 }
 
