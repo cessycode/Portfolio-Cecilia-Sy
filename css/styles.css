@@ -57,22 +57,6 @@ section {
     margin-top: 100px;
 }
 
-.span-1-of-4 {
-    margin-top: 50px;
-    text-align: center;
-}
-
-.span-1-of-4 p {
-   text-align: center;
-   font-size: 80%;
-}
-
-.span-1-of-4 h3{
-    margin-top: 50px;
-    margin-bottom: 30px;
-    line-height: 0.25;
-}
-
 img {
     width: 700px;
     height: 420px;
@@ -101,9 +85,6 @@ h3 {
     letter-spacing: 2px;
     font-weight: normal;
 }
-
-
-
 
 /*----------LINKS-----------*/
 
@@ -287,7 +268,7 @@ header .btn {
 	}
 }
                        
-.span-1-of-4 .fas, .span-1-of-4 .far, ion-icon {
+.fas, .far, ion-icon {
     color:#fff; 
     font-size: 180%;
 }
@@ -299,17 +280,17 @@ header .btn {
 
 /***********************/
 /*       ABOUT         */
-/***********************/   
+/***********************/  
 
 .hexagon {
     width: 100px;
     height: 55px;
-    margin: 0 auto;
+    margin: 0 auto; 
     background:  #00cccc;
     position: relative;
   }
 
-  .hexagon:before {
+.hexagon:before {
     content: "";
     position: absolute;
     top: -25px;
@@ -319,9 +300,9 @@ header .btn {
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-bottom: 25px solid #00cccc;
-  }
+}
 
-  .hexagon:after {
+.hexagon:after {
     content: "";
     position: absolute;
     bottom: -25px;
@@ -331,22 +312,50 @@ header .btn {
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-top: 25px solid  #00cccc;
-  }
+}
 
-  .oct {
+
+.about-contents {
+    display: grid;
+    gap: 20px;  
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.col-hexa {
+    text-align: center;
+}
+
+.hexa-desc {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.hexa-desc p {
+   text-align: center;
+   font-size: 80%;
+   margin-bottom: 25px;
+}
+
+.hexa-desc h3{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    line-height: 0.25;
+}
+
+.oct {
      margin: 0 auto;
-  }
+}
 
-  .oct,.oct div{
+.oct,.oct div{
     transform:rotate(-90deg);
     width:320px;
     height:320px;
     overflow:hidden;
-  }
+}
 
-  .oct div{
+.oct div{
     transform:rotate(45deg);
-  }
+}
 
 .oct div div {
     background: url(../images/ces2.png);
