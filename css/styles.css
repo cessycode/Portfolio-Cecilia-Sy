@@ -131,6 +131,10 @@ a:visited {
     display: block;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 .sticky .main-nav li, .brand {
     display: inline-block;
     margin-left: 40px;
