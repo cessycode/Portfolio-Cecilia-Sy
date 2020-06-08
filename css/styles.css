@@ -42,7 +42,6 @@ body {
 
 section {
     padding: 60px;
-    
 }
 
 .header-bar {
@@ -59,8 +58,7 @@ section {
 
 img {
     width: 400px;
-    height: 420px;
-    
+    height: 420px;    
 }
 
 h1 {
@@ -384,17 +382,11 @@ header .btn {
     grid-template-columns: repeat(3, 1fr);
 }
 
-
 .skills-icon {
     max-width: 28px;
     height: auto;
 }
 
-.skills p {
-    font-size: 0.9rem;
-    font-weight: bolder;
-    background-color: #00cccc;
-}
 
 /***************************/
 /*        PROJECTS         */
@@ -451,14 +443,14 @@ header .btn {
 }
 
 .card img {
-    max-height: 310px;
     max-width: 420px; 
+    max-height: 310px;
+  
     width: 100%;
     display: block;
 }
 
 .card:hover img {
-   opacity: 0;
    display: none;
 }
 

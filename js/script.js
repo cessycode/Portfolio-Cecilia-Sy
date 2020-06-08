@@ -82,49 +82,49 @@ $(document).ready(function() {
     $('.js--hexa-1').waypoint(function(direction){
         $('.js--hexa-1').addClass('animated flipInY');
     }, {
-        offset: '50%'
+        offset: '60%'
     });
 
     $('.js--hexa-1b').waypoint(function(direction){
         $('.js--hexa-1b').addClass('animated fadeIn');
     }, {
-        offset: '50%'
+        offset: '60%'
     });
 
     $('.js--hexa-2').waypoint(function(direction){
         $('.js--hexa-2').addClass('animated flipInY');
     }, {
-        offset: '50%'
+        offset: '60%'
     });
 
     $('.js--hexa-2b').waypoint(function(direction){
         $('.js--hexa-2b').addClass('animated fadeIn');
     }, {
-        offset: '50%'
+        offset: '60%'
     });
 
     $('.js--hexa-3').waypoint(function(direction){
         $('.js--hexa-3').addClass('animated flipInY');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
 
     $('.js--hexa-3b').waypoint(function(direction){
         $('.js--hexa-3b').addClass('animated fadeIn');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
 
     $('.js--hexa-4').waypoint(function(direction){
         $('.js--hexa-4').addClass('animated flipInY');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
 
     $('.js--hexa-4b').waypoint(function(direction){
         $('.js--hexa-4b').addClass('animated fadeIn');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
 
     /*******    ANIMATE ABOUT ME AND PIC/LOGO      *******/
@@ -147,37 +147,37 @@ $(document).ready(function() {
     $('.js--card-1').waypoint(function(direction){
         $('.js--card-1').addClass('animated fadeInUp');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
 
     $('.js--card-2').waypoint(function(direction){
         $('.js--card-2').addClass('animated fadeInUp');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
 
     $('.js--card-3').waypoint(function(direction){
         $('.js--card-3').addClass('animated fadeInUp');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
 
     $('.js--card-4').waypoint(function(direction){
         $('.js--card-4').addClass('animated fadeInUp');
     }, {
-        offset: '70%'
+        offset: '80%'
     });
 
     $('.js--card-5').waypoint(function(direction){
         $('.js--card-5').addClass('animated fadeInUp');
     }, {
-        offset: '70%'
+        offset: '80%'
     });
 
     $('.js--card-6').waypoint(function(direction){
         $('.js--card-6').addClass('animated fadeInUp');
     }, {
-        offset: '70%'
+        offset: '80%'
     });
 
 
@@ -190,19 +190,19 @@ $(document).ready(function() {
     $('.js--blog-1').waypoint(function(direction){
         $('.js--blog-1').addClass('animated fadeIn');
     }, {
-        offset: '70%'
+        offset: '80%'
     });
 
     $('.js--blog-2').waypoint(function(direction){
         $('.js--blog-2').addClass('animated fadeIn');
     }, {
-        offset: '70%'
+        offset: '80%'
     });
 
     $('.js--blog-3').waypoint(function(direction){
         $('.js--blog-3').addClass('animated fadeIn');
     }, {
-        offset: '70%'
+        offset: '85%'
     });
 
     

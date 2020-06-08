@@ -65,7 +65,7 @@
 
     /* Small phones from 0 to 480px */
     @media only screen and (max-width: 480px) {
-        section { padding: 25px 0; }
+        section { padding: 15px 0; }
         .contact-form {width: 100%; }
 
         .sticky .main-nav { display: none; }
@@ -74,6 +74,80 @@
         input[type=sumbit]{
             text-align: center;
         }
+
+        .intro-box-text h1 {
+           font-size: 180%;
+        }
+
+        .intro-box-text h3, .blogs h4, .blogs h6, .blogs p {
+            font-size: 95%;
+        }
+
+        .arrow-down a {
+            font-size: 95%;
+        }
+
+        .about-contents {
+            gap: 10px;  
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+
+        .profile {
+            grid-template-columns: 1fr;
+        }
+
+        .oct,.oct div{
+            width:200px;
+            height:200px;
+        }
+
+        .skills li {
+            padding: 5px;
+            font-size: 0.75rem;
+        }
+
+         .showcase {
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+
+        .card {
+            display: inline-block;
+            width: 380px;
+            height: 280px;
+        }
+
+        .card-desc h4 {
+            margin-top: 60px;
+        } 
+
+        .modal img {
+            width: 380px;
+            height: 280px;
+        }
+
+        .blogs {
+            display: block;
+            margin: auto;
+            text-align: center;           
+        }
+
+        .blogs img {           
+            max-width: 400px;
+            max-height: 200px;
+            width: 100%;
+        }
+        
+        .blogs h4, 
+        .blogs h6, 
+        .blogs p {
+            text-align: left;
+        }
+
+       #contact input, #contact textarea{
+           width: 95%;
+       }
     }
 
   
