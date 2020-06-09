@@ -102,7 +102,7 @@ a:visited {
 }
 
 /***** Mobile Nav  *****/
-.mobile-nav {
+.sticky .mobile-nav {
     float: right;
     color: #fff;
     font-size: 200%;
@@ -131,7 +131,7 @@ a:visited {
     display: block;
 }
 
-.mobile-nav {
+.sticky .mobile-nav {
     display: none;
 }
 
@@ -232,7 +232,7 @@ header .btn {
     transform: translate(-50%, -50%); 
     cursor: pointer;
     border: 1.5px solid;
-    padding: 0.5rem;
+    padding: 0.6rem;
     margin-top: 3rem;
 }
 
@@ -268,11 +268,13 @@ header .btn {
 }
                        
 .fas, .far, ion-icon {
+    margin-top: 10px;
     color:#fff; 
     font-size: 180%;
 }
 
 #mobile-icon {
+    margin-top: 10px;
     font-size: 28px;
 }
 
@@ -448,8 +450,7 @@ header .btn {
 
 .card img {
     max-width: 420px; 
-    max-height: 310px;
-  
+    max-height: 310px;  
     width: 100%;
     display: block;
 }
@@ -591,10 +592,6 @@ hr:nth-of-type(1) {
     padding: 0;
     text-align: center;
     color: #fff;
-}
-
-.section-contact .row {
-    margin-top: 80px;
 }
 
 .section-contact input {

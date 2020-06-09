@@ -15,7 +15,6 @@ $(document).ready(function() {
     /* Mobile Navi */
     $('.js--mobile-nav').click(function() {
         var main = $('.js--main-nav');
-        var mobile = $('.js--mobile');
         var icon = $('.js--mobile-nav i');
 
         main.slideToggle(200);
@@ -26,7 +25,6 @@ $(document).ready(function() {
         } else {
             icon.addClass('ion-md-menu');
             icon.removeClass('icon ion-md-close');
-            mobile.addClass('.mobile-nav');
         }
     });
 
