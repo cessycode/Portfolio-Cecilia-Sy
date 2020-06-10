@@ -157,7 +157,6 @@ a:visited {
     color: #ff0066;
     border-bottom: 2px solid  #ff0066;
 }
-
 .sticky .nav-brand {
     float: left;
     display: block;
@@ -167,7 +166,6 @@ a:visited {
     letter-spacing: 1.2;
     border-bottom: none;
 }
-
 .sticky .nav-brand small {
     display:block;
     font-size: 1 rem;
@@ -183,20 +181,17 @@ a:visited {
 header {
     background-color:#eee;
 }
-
 header .btn {
     color: #ff0066;
     font-weight: bolder;
     font-size: 1.5rem;
 }
-
 .intro-box {
     overflow: hidden;
     height: calc(100vh - 8em);
     padding: 4em;
     background-color:#000;
 }
-
 .intro-box-text {
     position: absolute;
     text-align: center;
@@ -205,14 +200,11 @@ header .btn {
     left: 50%; 
     transform: translate(-50%, -50%); 
 }
-
-
 .intro-box h3, .intro-box-text h1{
     margin: 0 auto;
     color:#fff;   
     transform: translateY(-50%);    
 }
-
 .intro-box-text h1 {
     text-transform: uppercase;
     color: #00e6e6;    
@@ -235,16 +227,13 @@ header .btn {
     padding: 0.6rem;
     margin-top: 3rem;
 }
-
 .arrow-down a:hover {
     color: #00cccc;
 }
-
 .arrow-down a i {
     font-size: 1.2rem;
     color: #ff0066; 
 }
-
 .fa-angle-double-down {
 
     animation: pointer 0.5s linear infinite;
@@ -265,14 +254,12 @@ header .btn {
 	50%{
 		transform: translateY(10px);
 	}
-}
-                       
+}                     
 .fas, .far, ion-icon {
     margin-top: 10px;
     color:#fff; 
     font-size: 180%;
 }
-
 #mobile-icon {
     margin-top: 10px;
     font-size: 28px;
@@ -289,8 +276,7 @@ header .btn {
     margin: 0 auto; 
     background:  #00cccc;
     position: relative;
-  }
-
+}
 .hexagon:before {
     content: "";
     position: absolute;
@@ -302,7 +288,6 @@ header .btn {
     border-right: 50px solid transparent;
     border-bottom: 25px solid #00cccc;
 }
-
 .hexagon:after {
     content: "";
     position: absolute;
@@ -314,13 +299,11 @@ header .btn {
     border-right: 50px solid transparent;
     border-top: 25px solid  #00cccc;
 }
-
 .about-contents {
     display: grid;
     gap: 20px;  
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
-
 .col-hexa {
     text-align: center;
 }
@@ -328,46 +311,38 @@ header .btn {
 .hexa-desc {
     text-align: center;
 }
-
 .hexa-desc p {
    text-align: center;
    font-size: 80%;
    margin-bottom: 25px;
 }
-
 .hexa-desc h3{
     margin-top: 50px;
     margin-bottom: 20px;
     line-height: 0.25;
 }
-
 .oct {
      margin: 0 auto;
 }
-
 .oct,.oct div{
     transform:rotate(-90deg);
     width:280px;
     height:280px;
     overflow:hidden;
 }
-
 .oct div{
     transform:rotate(45deg);
 }
-
 .oct div div {
     background: url(../images/ces2.png);
     background-size: contain;
 }
-
 .profile {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 2fr;
     margin-top: 40px;
 }
-
 .profile h3 {
     text-align: center;
     padding: 10px 15px;    
@@ -375,24 +350,20 @@ header .btn {
     text-transform: uppercase;
     margin-bottom: 15px;
 }
-
 .skills li {
     list-style-type: none;
     background-color:  #00cccc;
     padding: 10px;
 }
-
 .skills {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
 }
-
 .skills-icon {
     max-width: 28px;
     height: auto;
 }
-
 
 /***************************/
 /*        PROJECTS         */
@@ -401,29 +372,28 @@ header .btn {
 .section-projects {
     background-color: #ccffff;
 }
-
 .showcase {
     display: flex;
+    flex-wrap: wrap;
 }
-
 .card {
-    position: relative;
     display: flex;
-    width: 33.33333333333333%;
-    padding: 0;
-    overflow: hidden;
+    flex: 33.33333333333333%; 
+    max-width: 33.33333333333333%; 
 }
-
 .card-desc{
     visibility: hidden;
     text-align: center;
     margin: auto;
+    max-width: 420px; 
+    height: 310px;  
 }
-
+.card-desc h4 {
+    margin-top: 60px;
+} 
 .card-desc h5 {
     color: #ff0066;
 }
-
 .card-desc button{
    border: 2px solid #ff0066;
    margin-top: 25px;
@@ -431,38 +401,31 @@ header .btn {
    font-weight: normal;
    background-color:  #ccffff;
 }
-
 .card-desc button a:link,
 .card-desc button a:active {
     color: #1B242F;
 }
-
 .card-desc button:hover{
     background-color: #ff0066;
     font-weight: normal;
     text-decoration: none;
 }
-
 .card-desc button:hover a:link,
 .card-desc button:hover a:active {
     color: #fff;
 }
-
 .card img {
     max-width: 420px; 
     max-height: 310px;  
-    width: 100%;
+    width: 100%; 
     display: block;
 }
-
 .card:hover img {
    display: none;
 }
-
 .card:hover .card-desc {
     visibility: visible;
 }
-
 .card:hover {
     background-color:#00e6e6;
     margin: 0;
@@ -475,19 +438,16 @@ header .btn {
     width: 700px;
     height: 420px;
 }
-
 .modal-content {
     width: 100%;
     position: relative;
     text-align: center;
 }
-
 .slides-content-desc {
     text-align: left;
     margin: 20px 35px 12px 35px;
     line-height: 1.5;
 }
-
 .slides-content-desc button {
     text-transform: uppercase;
     font-size: 0.7rem;
@@ -497,31 +457,26 @@ header .btn {
     border: none;
     color: #fff;
 }
-
 .slides-content-desc p {
     text-align: justify;
     font-size: 14px;
     margin-top: 15px;
 }
-
 .slides-content-desc h5 {
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-
 .slides-content-desc h4 {
     font-weight: bold;
     font-size: 1.4rem;
 }
-
 hr:nth-of-type(1) {
     border-bottom: 3px solid  #ff0066;
 }
-
 .slides-content-desc hr {
     border-bottom: 0.5px solid #a6a6a6;
 }
-  
+
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
@@ -536,7 +491,7 @@ hr:nth-of-type(1) {
     transition: 0.6s ease;
     user-select: none;
   }
-  
+
   /* Position the "next button" to the right */
   .next {
     right: 0;
@@ -549,7 +504,6 @@ hr:nth-of-type(1) {
       border-radius: 3px 0 0 3px;
   }
 
-
 /***********************/
 /*       BLOGS         */
 /***********************/ 
@@ -557,28 +511,23 @@ hr:nth-of-type(1) {
     text-align: left;
     line-height: 1.4;
 }
-
 .blogs {
     display: flex;
 }
-
 .blogs img {
     max-height: 310px;
     max-width: 420px; 
     width: 100%;
     margin-bottom: 20px;
 }
-
 .blogs h4 {
     margin-bottom: 10px;
 }
-
 .blogs hr {
     color: #1B242F;
     width:20%;
     margin: 15px 0;
 }
-
 .blogs p {
     font-size: .8rem;
 }
@@ -593,7 +542,6 @@ hr:nth-of-type(1) {
     text-align: center;
     color: #fff;
 }
-
 .section-contact input {
     width: 500px;
     height: 38px;
@@ -603,7 +551,6 @@ hr:nth-of-type(1) {
     font-size: 0.8rem;
     border: none;
 }
-
 .section-contact textarea {
     width: 500px;
     height: 150px;
@@ -613,7 +560,6 @@ hr:nth-of-type(1) {
     font-size: 0.8rem;
     border: none;
 }
-
 .section-contact button {
     padding: 8px 35px;
     margin-bottom: 150px;
@@ -622,11 +568,9 @@ hr:nth-of-type(1) {
     text-transform: uppercase;
     font-size: 0.9rem;
 }
-
 .section-contact .header-bar {
     color: #fff;
 }
-
 
 /***********************/
 /*       FOOTER        */
@@ -637,20 +581,17 @@ footer {
     padding: 50px 0 30px;
     text-align: center;
 }
-
 footer a div {
     width: 55px;
     height: 55px;
     display: inline-block;
     background-color: #253241;
 }
-
 footer a {
     width: 85px;
     height: 55px;
     margin: 0 10px;
 }
-
 footer i {
     color: #fff;
     width: 100%;
@@ -658,25 +599,20 @@ footer i {
     height: 26px;
     margin: 16px auto;
 }
-
 footer h6 {
     margin-top: 15px;
     text-transform: uppercase;
     letter-spacing: 1.8px;
     color: #a6a6a6;
 }
-
 footer a:hover,
 footer a div:hover {
-    background-color:#00cccc;
-    
+    background-color:#00cccc;  
 }
-
 #copyright {
     color: #ff0066;
     font-weight: normal;
 }
-
 
 /***********************/
 /*     ANIMATIONS      */
@@ -744,7 +680,6 @@ footer a div:hover {
 .js--contact-form.animated {
     opacity: 1;
 }
-
 
 .js--hexa-1, 
 .js--hexa-1b, 

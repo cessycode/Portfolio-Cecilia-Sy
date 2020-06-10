@@ -16,6 +16,13 @@
     .sticky .main-nav { display: block; }
     .sticky .mobile-nav { display: none; }
 
+    .about-contents {  
+        grid-template-columns: 1fr 1fr;
+    }  
+    .card{
+        flex:50%;
+        max-width:50%;
+    }  
 }
 
 /* Small tablets to big tablets from 768px - 1023px */
@@ -26,14 +33,14 @@
     .sticky .main-nav { display: block; }
     .sticky .mobile-nav { display: none; }
 
-    /* .skills li {
+    .skills li {
         padding: 3px;
-        font-size: 0.3rem;
-    } */
-    .about-contents {  
-        gap: 50px;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    }    
+        font-size: 0.75rem;
+    }
+    .oct,.oct div{
+        width:200px;
+        height:200px;
+    }
 }
 
 /* Small phones to small tablets from 481px to 767px */
@@ -69,157 +76,80 @@
 
     .profile {
         grid-template-columns: 1fr;
-    }
-    .oct,.oct div{
-        width:180px;
-        height:180px;
-    }
-
-    .skills li {
-        padding: 5px;
-        font-size: 0.75rem;
-    }
+    }   
     .about-contents {  
-        gap: 26px;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }    
-
-    .showcase {
-        display: block;
-        text-align: center;
-        margin: auto;
-    }
-
-    .card {
-        display: inline-block;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    } 
+    .modal img {
         width: 420px;
         height: 320px;
     }
-
-    .card-desc h4 {
-        margin-top: 60px;
-    } 
-
-    .modal img {
-        width: 380px;
-        height: 280px;
-    }
-
     .blogs {
         display: block;
         margin: auto;
         text-align: center;           
     }
-
     .blogs img {           
         max-width: 400px;
         max-height: 200px;
         width: 100%;
     }
-
-    hr {display: none; }
-
-   #contact input, #contact textarea{
+    .blogs hr {
+        display: none;
+    }
+    #contact input, #contact textarea{
        width: 85%;
    }
 }
 
     /* Small phones from 0 to 480px */
     @media only screen and (max-width: 480px) {
-        section { padding: 15px 0; }
+        section { padding: 25px 0; }
         .contact-form {width: 100%; }
 
         .sticky .mobile-nav {
            padding: 0 15px;         
         }
-
         .arrow-down a {
            padding-top: 0.3rem;
         }
-
         .arrow-down a i {
             font-size: 1rem;
         }
-        .sticky .main-nav { display: none; }
-        .sticky .mobile-nav { display: block; }
-
         input[type=sumbit]{
             text-align: center;
         }
-
         .intro-box-text h1 {
            font-size: 180%;
         }
-
         .intro-box-text h3, .blogs h4, .blogs h6, .blogs p {
             font-size: 95%;
         }
-
         .arrow-down a {
             font-size: 95%;
         }
-
         .about-contents {
             gap: 10px;  
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        }
-
-        .profile {
-            grid-template-columns: 1fr;
-        }
-
-        .oct,.oct div{
-            width:200px;
-            height:200px;
-        }
-
-        .skills li {
-            padding: 5px;
-            font-size: 0.75rem;
-        }
-
-         .showcase {
-            display: block;
-            text-align: center;
-            margin: auto;
-        }
-
-        .card {
-            display: inline-block;
-            width: 380px;
-            height: 280px;
-        }
-
-        .card-desc h4 {
-            margin-top: 60px;
         } 
-
+        .card{
+            flex:100%;
+            max-width:100%;
+        }  
         .modal img {
+            width: 350px;
+            height: 250px;
+        }
+        .blogs img {
             width: 380px;
             height: 280px;
         }
-
-        .blogs {
-            display: block;
-            margin: auto;
-            text-align: center;           
-        }
-
-        .blogs img {           
-            max-width: 400px;
-            max-height: 200px;
-            width: 100%;
-        }
-
         .blogs h4, 
         .blogs h6, 
         .blogs p {
             text-align: left;
         }
-
-       #contact input, #contact textarea{
-           width: 85%;
-       }
     }
 
   
