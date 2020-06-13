@@ -14,17 +14,32 @@ $(document).ready(function() {
 
     /* Mobile Navi */
     $('.js--mobile-nav').click(function() {
-        var main = $('.js--main-nav');
-        var icon = $('.js--mobile-nav i');
+        var main = $('.js--main-nav'),
+            icon = $('.js--mobile-nav i'),
+            scrollPosition = [self.pageXOffset, self.pageYOffset];
 
-        main.slideToggle(200);
-
+        main.slideToggle(200); //toggle between up and down scrolls
+        
         if (icon.hasClass('ion-md-menu')){
             icon.addClass('ion-md-close');
             icon.removeClass('ion-md-menu');
+            
+            //disable scroll 
+            var html = jQuery('html');
+            html.data('scroll-position', scrollPosition);
+            html.data('previous-overflow', html.css('overflow'));
+            html.css('overflow', 'hidden');
+            window.scrollTo(scrollPosition[0], scrollPosition[1]);
+            
         } else {
             icon.addClass('ion-md-menu');
             icon.removeClass('icon ion-md-close');
+            
+            //enable scroll 
+            var html = jQuery('html');
+            var scrollPosition = html.data('scroll-position');
+            html.css('overflow', html.data('previous-overflow'));
+            window.scrollTo(scrollPosition[0], scrollPosition[1])
         }
     });
 
@@ -267,7 +282,6 @@ $(document).ready(function() {
 });
 
 // Header intro-page with particles.js
-
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -324,6 +338,7 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
 
 /*scroll to top of page when page is refreshed or reloaded */
 /*window.onbeforeunload = function () {
