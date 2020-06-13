@@ -15,31 +15,35 @@ $(document).ready(function() {
     /* Mobile Navi */
     $('.js--mobile-nav').click(function() {
         var main = $('.js--main-nav'),
-            icon = $('.js--mobile-nav i'),
-            scrollPosition = [self.pageXOffset, self.pageYOffset];
+            icon = $('.js--mobile-nav i');
 
         main.slideToggle(200); //toggle between up and down scrolls
         
         if (icon.hasClass('ion-md-menu')){
             icon.addClass('ion-md-close');
             icon.removeClass('ion-md-menu');
-            
-            //disable scroll 
-            var html = jQuery('html');
-            html.data('scroll-position', scrollPosition);
-            html.data('previous-overflow', html.css('overflow'));
-            html.css('overflow', 'hidden');
-            window.scrollTo(scrollPosition[0], scrollPosition[1]);
+            disableScroll();           
             
         } else {
             icon.addClass('ion-md-menu');
             icon.removeClass('icon ion-md-close');
-            
-            //enable scroll 
+            enableScroll();         
+        }
+
+        $('#home').click(function(){
+            main.css('display', 'none');
+            location.reload();
+        });
+
+        function disableScroll() {
             var html = jQuery('html');
-            var scrollPosition = html.data('scroll-position');
+            html.data('previous-overflow', html.css('overflow'));
+            html.css('overflow', 'hidden');
+           
+        }
+        function enableScroll() {
+            var html = jQuery('html');
             html.css('overflow', html.data('previous-overflow'));
-            window.scrollTo(scrollPosition[0], scrollPosition[1])
         }
     });
 
@@ -156,7 +160,6 @@ $(document).ready(function() {
         offset: '85%'
     });
 
-
     /*********    ANIMATE PROJECTS     ********/
 
     $('.js--card-1').waypoint(function(direction){
@@ -220,7 +223,6 @@ $(document).ready(function() {
         offset: '85%'
     });
 
-    
     /*********   ANIMATE CONTACT    *********/
 
     $('.js--contact-form').waypoint(function(direction){
@@ -229,8 +231,6 @@ $(document).ready(function() {
         offset: '70%'
     });
 
-
-
     /***********  ANIMATE FOOTER  **************/
 
     $('.js--social-links').waypoint(function(direction){
@@ -238,7 +238,6 @@ $(document).ready(function() {
     }, {
         offset: '100%'
     });
-
 
     /*  NAVIGATION & BUTTON Scrolls */
 
@@ -338,6 +337,11 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+// Reload when window size change
+$(window).resize(function(){
+    location.reload();
+  });
 
 
 /*scroll to top of page when page is refreshed or reloaded */
