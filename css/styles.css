@@ -5,6 +5,7 @@
 * {
     margin:0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 *:focus {
@@ -40,20 +41,12 @@ body {
     margin: 0 auto;
 }
 
-section {
-    padding: 60px;
-}
-
 .header-bar {
     text-align: center;
     font-size: 360%;
     line-height: 0.50;
     margin-bottom: 50px;    
     color: #ff0066;
-}
-
-.span-1-of-2 {
-    margin-top: 100px;
 }
 
 img {
@@ -106,7 +99,7 @@ a:visited {
     float: right;
     color: #fff;
     font-size: 200%;
-    margin-top: 15px;
+    margin: 10px;
     cursor: pointer;
     display: none; 
 }
@@ -118,17 +111,18 @@ a:visited {
     top: 0;
     left: 0;
     width: 100%;
+    height: auto;
     background-color:rgba(27, 36, 47, 0.92);
     box-shadow: 0 2px 2px  #ff0066;
     z-index: 9999;
 }
 
 .sticky .main-nav {
-    margin-top: 15px;
+    display: block;
+    margin: 20px;    
     float: right;
     list-style: none;
     color: #fff;   
-    display: block;
 }
 
 .sticky .mobile-nav {
@@ -160,7 +154,8 @@ a:visited {
 .sticky .nav-brand {
     float: left;
     display: block;
-    margin: 8px 0;
+    margin: 10px;
+    height: 20px;
     color: #ff0066;
     font-weight: bold;
     letter-spacing: 1.2;
@@ -179,7 +174,10 @@ a:visited {
 /***************************/
 
 header {
-    background-color:#eee;
+    height: 100vh;
+    padding:0;
+    margin: 0;
+    background-color: #000;
 }
 header .btn {
     color: #ff0066;
@@ -188,15 +186,14 @@ header .btn {
 }
 .intro-box {
     overflow: hidden;
-    height: calc(100vh - 8em);
-    padding: 4em;
-    background-color:#000;
+    height: calc(100vh - 10em);
+    padding: 6em;
 }
 .intro-box-text {
     position: absolute;
     text-align: center;
     width: 30em;
-    top: 50%;
+    top: 40%;
     left: 50%; 
     transform: translate(-50%, -50%); 
 }
@@ -219,13 +216,13 @@ header .btn {
 
 .arrow-down a  {
     position: absolute; 
-    font-size: 1rem;    
+    font-size: 1.1rem;    
     left: 50%; 
     transform: translate(-50%, -50%); 
     cursor: pointer;
     border: 1.5px solid;
     padding: 0.6rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 .arrow-down a:hover {
     color: #00cccc;

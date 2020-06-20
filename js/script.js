@@ -7,9 +7,6 @@ $(document).ready(function() {
         } else {
             $('nav').removeClass('sticky');
         }
-    }, {
-        /* sets the distance when class 'sticky' is activated */
-        offset: '60px'
     });
 
     /* Mobile Navi */
@@ -323,7 +320,7 @@ TxtType.prototype.tick = function() {
 };
 
 window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
+    var elements = $('.typewrite');
     for (var i=0; i<elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
         var period = elements[i].getAttribute('data-period');
@@ -338,7 +335,7 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-// Reload when window size change
+// Reload page when window size change
 $(window).resize(function(){
     location.reload();
   });
