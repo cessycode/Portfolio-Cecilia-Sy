@@ -128,19 +128,19 @@ $(document).ready(function() {
     $('.js--hexa-3b').waypoint(function(direction){
         $('.js--hexa-3b').addClass('animated fadeIn');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
 
     $('.js--hexa-4').waypoint(function(direction){
         $('.js--hexa-4').addClass('animated flipInY');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
 
     $('.js--hexa-4b').waypoint(function(direction){
         $('.js--hexa-4b').addClass('animated fadeIn');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
 
     /*******    ANIMATE ABOUT ME AND PIC/LOGO      *******/
