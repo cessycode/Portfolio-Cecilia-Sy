@@ -98,49 +98,49 @@ $(document).ready(function() {
     $('.js--hexa-1').waypoint(function(direction){
         $('.js--hexa-1').addClass('animated flipInY');
     }, {
-        offset: '60%'
+        offset: '50%'
     });
 
     $('.js--hexa-1b').waypoint(function(direction){
         $('.js--hexa-1b').addClass('animated fadeIn');
     }, {
-        offset: '60%'
+        offset: '50%'
     });
 
     $('.js--hexa-2').waypoint(function(direction){
         $('.js--hexa-2').addClass('animated flipInY');
     }, {
-        offset: '60%'
+        offset: '50%'
     });
 
     $('.js--hexa-2b').waypoint(function(direction){
         $('.js--hexa-2b').addClass('animated fadeIn');
     }, {
-        offset: '60%'
+        offset: '50%'
     });
 
     $('.js--hexa-3').waypoint(function(direction){
         $('.js--hexa-3').addClass('animated flipInY');
     }, {
-        offset: '80%'
+        offset: '50%'
     });
 
     $('.js--hexa-3b').waypoint(function(direction){
         $('.js--hexa-3b').addClass('animated fadeIn');
     }, {
-        offset: '80%'
+        offset: '50%'
     });
 
     $('.js--hexa-4').waypoint(function(direction){
         $('.js--hexa-4').addClass('animated flipInY');
     }, {
-        offset: '80%'
+        offset: '50%'
     });
 
     $('.js--hexa-4b').waypoint(function(direction){
         $('.js--hexa-4b').addClass('animated fadeIn');
     }, {
-        offset: '80%'
+        offset: '50%'
     });
 
     /*******    ANIMATE ABOUT ME AND PIC/LOGO      *******/
