@@ -122,7 +122,7 @@ $(document).ready(function() {
     $('.js--hexa-3').waypoint(function(direction){
         $('.js--hexa-3').addClass('animated flipInY');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
 
     $('.js--hexa-3b').waypoint(function(direction){
