@@ -335,11 +335,6 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-// Reload page when window size change
-$(window).resize(function(){
-    location.reload();
-  });
-
 
 /*scroll to top of page when page is refreshed or reloaded */
 /*window.onbeforeunload = function () {
