@@ -336,9 +336,9 @@ window.onload = function() {
 };
 
 // Reload page when window size change
-// $(window).resize(function(){
-//     location.reload();
-//   });
+$(window).resize(function(){
+    location.reload();
+  });
 
 
 /*scroll to top of page when page is refreshed or reloaded */
