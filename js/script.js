@@ -43,6 +43,7 @@ $(document).ready(function() {
             html.css('overflow', html.data('previous-overflow'));
         }
     });
+   
 
      /*******   ANIMATE HEADERS  *******/
     $('.js--wp-header').waypoint(function(direction) {
