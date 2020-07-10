@@ -414,7 +414,7 @@ header .btn {
     display: flex;
     flex: 33.33333333333333%; 
     max-width: 33.33333333333333%; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 8px 25px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
 }
 .card-desc{
     visibility: hidden;
@@ -613,9 +613,9 @@ hr:nth-of-type(1) {
 /*       FOOTER        */
 /***********************/   
 footer {
-    height: 100px;
+    height: 180px;
     background-color: #1B242F;
-    padding: 50px 0 30px;
+    padding: 50px;
     text-align: center;
 }
 footer a div {
