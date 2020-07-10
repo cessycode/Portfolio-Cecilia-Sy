@@ -74,6 +74,9 @@
     h1 { font-size: 180%; }
     h2 { font-size: 150%; }
 
+    .intro-contacts a div {
+        margin: 0 auto;
+    }
     .profile {
         grid-template-columns: 1fr;
     }   
