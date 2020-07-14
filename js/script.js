@@ -234,7 +234,7 @@ $(document).ready(function() {
     $('.js--social-links').waypoint(function(direction){
         $('.js--social-links').addClass('animated bounce');
     }, {
-        offset: '100%'
+        offset: '50%'
     });
 
     /*  NAVIGATION & BUTTON Scrolls */
@@ -278,7 +278,7 @@ $(document).ready(function() {
     });
 });
 
-// Header intro-page with particles.js
+// Header intro-page 
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;

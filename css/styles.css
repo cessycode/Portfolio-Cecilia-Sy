@@ -475,6 +475,11 @@ header .btn {
     width: 700px;
     height: 420px;
 }
+
+.slides-content img {
+    width: 700px;
+    height: 420px;
+}
 .modal-content {
     width: 100%;
     position: relative;

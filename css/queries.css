@@ -18,11 +18,8 @@
 
     .about-contents {  
         grid-template-columns: 1fr 1fr;
-    }  
-    .card{
-        flex:50%;
-        max-width:50%;
-    }  
+    }     
+    
 }
 
 /* Small tablets to big tablets from 768px - 1023px */
@@ -84,10 +81,7 @@
         gap: 10px;
         grid-template-columns: 1fr 1fr;
     } 
-    .modal img {
-        width: 420px;
-        height: 320px;
-    }
+    
     .blogs {
         display: block;
         margin: auto;
@@ -133,6 +127,14 @@
         }
         .intro-box-text h3, .blogs h4, .blogs h6, .blogs p {
             font-size: 95%;
+        }
+        .intro-contacts a div, footer a div {
+            width: 35px;
+            height: 35px;
+            margin: 0;
+        }
+        footer div a {
+            margin: 5px;
         }
         .arrow-down a {
             font-size: 95%;
