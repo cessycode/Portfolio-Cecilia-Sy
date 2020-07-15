@@ -471,15 +471,15 @@ header .btn {
 
 /*****   MODALS   ******/
 
-.modal img {
+.slides-content{
     width: 700px;
     height: 420px;
 }
 
 .slides-content img {
-    width: 700px;
-    height: 420px;
+    width: 100%;
 }
+
 .modal-content {
     width: 100%;
     position: relative;

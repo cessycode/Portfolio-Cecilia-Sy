@@ -19,7 +19,12 @@
     .about-contents {  
         grid-template-columns: 1fr 1fr;
     }     
-    
+    .slides-content img{
+        width: 500px;
+    }
+    .slides-content hr {
+        width: 95%;
+    }
 }
 
 /* Small tablets to big tablets from 768px - 1023px */
@@ -98,6 +103,19 @@
     #contact input, #contact textarea{
        width: 85%;
    }
+   .slides-content{
+        width: 420px;
+        height: 320px;
+    }
+    .slides-content img {
+        margin: 30px 10px;
+        width: 400px;
+        height: 300px;
+    }
+    .slides-content-desc h4,
+    .slides-content-desc h5 {
+        font-size: 0.9em;
+    }
 }
 
     /* Small phones from 0 to 480px */
@@ -147,10 +165,18 @@
             flex:100%;
             max-width:100%;
         }  
-        .modal img {
-            width: 350px;
-            height: 250px;
-        }
+       .slides-content{
+           width: 300px;
+           height: auto;
+           font: 1em;
+           padding: 5px;
+           margin: 5px; 
+       }
+       
+       .slides-content img {
+           width: 280px;
+           height: auto;
+       }
         .blogs img {
             width: 380px;
             height: 280px;
