@@ -77,7 +77,11 @@
     h2 { font-size: 150%; }
 
     .intro-contacts a div {
-        margin: 0 auto;
+        font-size: 0.8em;
+    }
+    .intro-contacts a {
+        margin: 0 5px;
+        top: 60px;
     }
     .profile {
         grid-template-columns: 1fr;
@@ -131,12 +135,6 @@
         .main-nav li {
            font-size: 0.7rem;
         }
-        .arrow-down a {
-           padding-top: 0.3rem;
-        }
-        .arrow-down a i {
-            font-size: 1rem;
-        }
         input[type=sumbit]{
             text-align: center;
         }
@@ -154,7 +152,7 @@
         footer div a {
             margin: 5px;
         }
-        .arrow-down a {
+        .view-work a {
             font-size: 95%;
         }
         .about-contents {
@@ -171,8 +169,7 @@
            font: 1em;
            padding: 5px;
            margin: 5px; 
-       }
-       
+       }       
        .slides-content img {
            width: 280px;
            height: auto;

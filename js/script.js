@@ -159,7 +159,6 @@ $(document).ready(function() {
     });
 
     /*********    ANIMATE PROJECTS     ********/
-
     $('.js--card-1').waypoint(function(direction){
         $('.js--card-1').addClass('animated fadeInUp');
     }, {
@@ -234,7 +233,7 @@ $(document).ready(function() {
     $('.js--social-links').waypoint(function(direction){
         $('.js--social-links').addClass('animated bounce');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
 
     /*  NAVIGATION & BUTTON Scrolls */

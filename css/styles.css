@@ -187,7 +187,7 @@ header .btn {
 }
 .intro-box {
     overflow: hidden;
-    height: calc(100vh - 10em);
+    height: calc(100vh - 8em);
     padding: 6em;
 }
 .intro-box-text {
@@ -219,45 +219,20 @@ header .btn {
 /***************************/
 /*         ICONS           */
 /***************************/
-.arrow-down a  {
+.view-work a  {
     position: absolute; 
-    font-size: 1.1rem;    
-    left: 50%; 
+    font-size: 1.1rem;   
+    top: 150%;
     transform: translate(-50%, -50%); 
     cursor: pointer;
-    padding: 0.6rem;
-    margin-top: 5rem;
+    padding: 1rem;
     box-shadow: 3px 5px 10px #00e6e6;
     color: #fff;
 }
-.arrow-down a:hover {
+.view-work a:hover {
     color: #00cccc;
+    font-size: 1.3em;
 }
-.arrow-down a i {
-    font-size: 1.2rem;
-    color: #ff0066; 
-}
-.fa-angle-double-down {
-
-    animation: pointer 0.5s linear infinite;
-	animation-name: pointer;
-	animation-duration: 0.5s;
-	animation-timing-function: linear;
-	animation-delay: 0;
-	animation-iteration-count: infinite;
-}
-
-@keyframes pointer {
-	0%, 100% {
-		transform: translateY(0);
-	}
-	25%, 75%{
-		transform: translateY(5px);
-	}
-	50%{
-		transform: translateY(10px);
-	}
-}                     
 .fas, .far, ion-icon {
     margin-top: 10px;
     color:#fff; 
@@ -370,6 +345,7 @@ header .btn {
     background-size: contain;
 }
 .profile {
+    text-align: justify;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 2fr;
@@ -434,7 +410,7 @@ header .btn {
    margin-top: 25px;
    padding: 6px 15px;
    font-weight: normal;
-   background-color:  #00e6e6;
+   background-color:  #ccffff;
    box-shadow: 3px 5px 8px #ff0066;
 }
 .card-desc button a:link,
@@ -463,8 +439,16 @@ header .btn {
 .card:hover .card-desc {
     visibility: visible;
 }
+.card:hover .card-title {
+    animation: fadeInDown; 
+    animation-duration: 1s;
+}
+.card:hover .card-button {
+   animation: fadeInUp;
+   animation-duration: 1s;
+}
 .card:hover {
-    background-color:#00e6e6;
+    background-color: #ccffff;
     margin: 0;
     padding: 0;
 }
