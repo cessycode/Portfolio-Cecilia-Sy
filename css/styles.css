@@ -548,6 +548,7 @@ hr:nth-of-type(1) {
 }
 .blogs h4 {
     margin-bottom: 10px;
+    color: #1B242F;
 }
 .blogs hr {
     color: #1B242F;
@@ -556,6 +557,39 @@ hr:nth-of-type(1) {
 }
 .blogs p {
     font-size: .8rem;
+}
+.blog-html{
+    text-align: center;    
+    padding: 2em;
+    line-height: 1.5;
+}
+.blog-html-header {
+    line-height: 2em;
+}
+.blog-html-header>h3 {
+    font-size: 1.5em;
+}
+.blog-html p {
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 1em;
+}
+.blog-html .content h4 {
+    text-align: justify;
+    margin-top: 1.5em;
+    text-transform: capitalize;
+}
+
+.blog-html .content p {
+    text-align: justify;
+    margin: 1.5em;
+}
+
+.blog-html img {
+    width: 100%;
+    max-width: 800px;
+    max-height: 620px;
+    margin: 2em;
 }
 
 /***********************/
@@ -601,11 +635,12 @@ hr:nth-of-type(1) {
 /***********************/
 /*       FOOTER        */
 /***********************/   
-footer {
-    height: 180px;
+footer, .blog-html-header, .blog-html-footer {
+    height: 170px;
     background-color: #1B242F;
-    padding: 50px;
+    padding: 60px;
     text-align: center;
+    color: #a6a6a6;
 }
 footer a div {
     width: 55px;
