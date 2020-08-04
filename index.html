@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/animate.css">
         <link rel="stylesheet" type="text/css" href="css/grid.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="css/queries.css">
         <link rel="stylesheet" type = "text/css" href="css/modal.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> 
@@ -22,14 +22,14 @@
         <header>
             <nav>               
                 <a href="index.html" class="nav-brand">CESSY<small>Web Developer</small></a>
-                <ul class="main-nav js--main-nav">
+                <ul class="main-nav">
                     <li><a id="home" href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#blogs">Blogs</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>   
-                <a class="mobile-nav js--mobile-nav"><i class="icon ion-md-menu"></i></a>                 
+                <a class="mobile-nav"><i class="icon ion-md-menu"></i></a>                 
             </nav>           
            
             <div id="particles-js" class="intro-box">
@@ -41,11 +41,11 @@
                             <span class="wrap"></span>
                         </a>
                     </h3>
-                    <div class= "intro-contacts">
-                        <a href="#"><div class="js--social-links"><i class="fab fa-linkedin-in"></i></div></a>
-                        <a href="#"><div class="js--social-links"><i class="fab fa-facebook-f"></i></div></a>
-                        <a href="#"><div class="js--social-links"><i class="fab fa-instagram"></i></div></a>
-                        <a href="#"><div class="js--social-links"><i class="fab fa-codepen"></i></div></a>
+                    <div class="intro-contacts" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <a href="#"><div><i class="fab fa-linkedin-in"></i></div></a>
+                        <a href="#"><div><i class="fab fa-facebook-f"></i></div></a>
+                        <a href="#"><div><i class="fab fa-instagram"></i></div></a>
+                        <a href="#"><div><i class="fab fa-codepen"></i></div></a>
                     </div>
                     <div class = "view-work">
                         <a href=#about>View My Work</a>
@@ -55,63 +55,69 @@
            
         </header>
 
-        <section class = 'section-about js--section-about' id="about">
+        <section class = 'section-about' id="about">
             <div class="row">
-                <h2 class="js--wp-header">About</h2>
-                <div class = "header-bar js--wp-header-bar">&mdash;</div>
+                <h2 data-aos="fade-right" class="section-header">About</h2>
+                <div data-aos="fade-left" class="section-header-bar">&mdash;</div>
             
                 <div class="about-contents">
                     <div class = "col-hexa">
-                        <div class= "hexagon js--hexa-1">
-                            <i class="fas fa-tachometer-alt"></i>
+                        <div class="hexagon" data-aos="flip-left" data-aos-delay="700" data-aos-duration="1000">    
+                          <i class="fas fa-tachometer-alt"></i>
                         </div>
-                        <div class="hexa-desc js--hexa-1b">
+                        <div data-aos="zoom-in" data-aos-delay="700" class="hexa-desc">
                             <h3>Fast</h3>
                             <p>Fast load times.</p>
                         </div>
                     </div>
                     <div class = "col-hexa">
-                        <div class= "hexagon js--hexa-2">
+                        <div class= "hexagon" data-aos="flip-left" data-aos-delay="700" data-aos-duration="1000">
                             <i class="fas fa-laptop"></i>
                             <i class="fas fa-mobile-alt" id ="mobile-icon"></i>
                         </div>
-                        <div class ="hexa-desc js--hexa-2b">
+                        <div data-aos="zoom-in" data-aos-delay="700" class="hexa-desc">
                             <h3>Responsive</h3>
                             <p>My layouts will work on any device, big or small.</p>
                         </div>
                     </div>
                     <div class = "col-hexa">
-                        <div class= "hexagon js--hexa-3">
+                        <div class= "hexagon" data-aos="flip-left" data-aos-delay="700" data-aos-duration="1000">
                             <i class="far fa-lightbulb"></i>
                         </div>
-                        <div class="hexa-desc js--hexa-3b">
+                        <div data-aos="zoom-in" data-aos-delay="700" class="hexa-desc">
                             <h3>Intuitive</h3>
                             <p>Easy to use and understand.</p>
                         </div>
                     </div>
                     <div class ="col-hexa">
-                        <div class="hexagon js--hexa-4">
+                        <div class="hexagon" data-aos="flip-left" data-aos-delay="700" data-aos-duration="1000">
                             <ion-icon name="rocket-outline"></ion-icon>
                         </div>
-                        <div class="hexa-desc js--hexa-4b">
+                        <div data-aos="zoom-in" data-aos-delay="700" class="hexa-desc">
                             <h3>Interactive</h3>
                             <p>Expressive animations for more user engagement.</p>
                         </div>
                     </div>
                 </div>
                 <div class="profile">                
-                    <div class = "js--profile-pic">
+                    <div class="profile-pic"
+                            data-aos="fade-right"                        
+                            data-aos-duration="500"
+                            data-aos-delay="900">
                         <div class="oct">
                             <div>
                                 <div></div>
                             </div>
                         </div> 
-                    </br>
+                        </br>
                          <p>I'm a Front-end Web Developer. I am fascinated with UI effects and animations and use them
                             to bring web pages to life.
                          </p>         
                     </div>
-                    <div class = "js--about-me">
+                    <div class="about-me"
+                            data-aos="fade-left"                          
+                            data-aos-duration="500"
+                            data-aos-delay="900">
                         <h3>Skills/Stack</h3>  
                         <ul class="skills">
                             <li><img class="skills-icon" src="./images/skills/html.png" alt="html_icon">HTML5</li>
@@ -130,11 +136,11 @@
 
         <section class="section-projects clearfix" id="projects">
             <div class="row">
-                <h2 class="js--wp-header2">Projects</h2>
-                <div class = "header-bar js--wp-header-bar2">&mdash;</div>      
+                <h2 data-aos="fade-right" class="section-header">Projects</h2>
+                <div data-aos="fade-left" class="section-header-bar">&mdash;</div>      
 
                 <div class="showcase">
-                    <div class="card js--card-1">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
                         <img src="./images/projects/healthyEats.png" alt="Healthy Eats">
                         <div class="card-desc">
                             <div class="card-title">
@@ -197,7 +203,7 @@
                             <a href="#" rel="modal:close">Close</a>
                         </div>
                     </div>
-                    <div class="card js--card-2">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
                         <img src="./images/projects/robot1.png" alt="FindRobot">
                         <div class = "card-desc">
                             <div class="card-title">
@@ -258,7 +264,7 @@
                             <a href="#" rel="modal:close">Close</a>
                         </div>
                     </div>
-                    <div class="card js--card-3">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1100">
                         <img src="./images/projects/recipe2.png" alt="RecipeApp">
                         <div class = "card-desc">
                             <div class="card-title">
@@ -318,7 +324,7 @@
                             <a href="#" rel="modal:close">Close</a>
                         </div>
                     </div>  
-                    <div class="card js--card-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1200">
                         <img src="./images/projects/cessyMusic.jpg" alt="Cessy Music">
                         <div class = "card-desc">
                             <div class="card-title">
@@ -378,7 +384,7 @@
                             <a href="#" rel="modal:close">Close</a>
                         </div>
                     </div>                              
-                    <div class="card js--card-5">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1300">
                         <img src="./images/projects/face3.png" alt="FaceDetect">
                         <div class = "card-desc">
                             <div class="card-title">
@@ -445,7 +451,7 @@
                             <a href="#" rel="modal:close">Close</a>
                         </div>
                     </div>  
-                    <div class="card js--card-6">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1400">
                         <img src="./images/projects/photo1.png" alt="Photos">
                         <div class = "card-desc">
                             <div class="card-title">
@@ -513,22 +519,22 @@
 
        <section class="section-blogs" id="blogs">
             <div class="row">
-                <h2 class="js--wp-header3">Blog</h2>
-                <div class = "header-bar js--wp-header-bar3">&mdash;</div>
+                <h2 data-aos="fade-right" class="section-header">Blog</h2>
+                <div data-aos="fade-left" class = "section-header-bar">&mdash;</div>
                 
-                <div class = "blogs">
-                    <div class = "col span-1-of-2 js--blog-1">
+                <div class="blogs">
+                    <div class="col span-1-of-2" data-aos="zoom-in" data-aos-delay="800">
                         <img src="images/blogs/learn-code.jpg">               
                         <a href="./images/blogs/blog1.html" target="_blank"><h4>Learning Web Development in the Middle of A Pandemic</h4></a>
                         <h6>July 19, 2020</h6>
-                        <hr>
+                        <div class="header-bar">&mdash;</div>
                         <p>Tips to effective learning in the middle of a chaotic environment</p>
                     </div>
-                    <div class = "col span-1-of-2 js--blog-2">                
+                    <div class="col span-1-of-2" data-aos="zoom-in" data-aos-delay="800">                
                         <img src="images/blogs/planning.jpg" >
                         <a href="./images/blogs/blog2.html" target="_blank"><h4>Midlife Career Change</h4></a>
                         <h6>July 20, 2020</h6>
-                        <hr>
+                        <div class="header-bar">&mdash;</div>
                         <p>Becoming a Web Developer in your 40s.</p>
                     </div>                
                 </div>
@@ -540,9 +546,9 @@
                 <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
             </svg>
             <div class="row">
-                <h2 class="js--wp-header4">Contact</h2>
-                <div class = "header-bar js--wp-header-bar4">&mdash;</div>
-                <form action="#" class="js--contact-form">                               
+                <h2 data-aos="fade-right" class="section-header">Contact</h2>
+                <div data-aos="fade-left" class = "section-header-bar">&mdash;</div>
+                <form action="#" data-aos="zoom-in-up" data-aos-delay="700">                               
                     <input type="text" name="name" placeholder = "Name" required><br>                      
                     <input type="email" name="email" placeholder = "Enter Email" required><br>
                     <textarea placeholder = "Your Message" type = "text" name = "message"></textarea><br>
@@ -554,10 +560,10 @@
        <footer>
            <div class="row">
                <div>
-                    <a href="#"><div class="js--social-links"><i class="fab fa-linkedin-in"></i></i></div></a>
-                    <a href="#"><div class="js--social-links"><i class="fab fa-facebook-f"></i></div></a>
-                    <a href="#"><div class="js--social-links"><i class="fab fa-instagram"></i></div></a>
-                    <a href="#"><div class="js--social-links"><i class="fab fa-codepen"></i></div></a>
+                    <a href="#"><div><i class="fab fa-linkedin-in"></i> </div></a>
+                    <a href="#"><div><i class="fab fa-facebook-f"></i></div></a>
+                    <a href="#"><div><i class="fab fa-instagram"></i></div></a>
+                    <a href="#"><div><i class="fab fa-codepen"></i></div></a>
                     <h6>Cecilia Sy <span id="copyright">&copy;2020</span></h6>
                 </div>
            </div>
@@ -576,16 +582,25 @@
        <!--allows css3 pseudo-class for Internet Explorer 6, 7, 8-->
        <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
 
+       <!-- FOR PARTICLES -->
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/particles.js"></script>
         <script src="js/app.js"></script>
         
         <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
-
+        
+        <!-- FOR MODAL -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+         
+        <!-- ANIMATIONS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
         <script src="js/script.js"></script>
 
+        <script>
+            AOS.init();
+        </script>
      
     </body>
 

@@ -36,25 +36,22 @@ body {
 /***************************/
 /*  REUSABLE COMPONENTS    */
 /***************************/
-
 .row {
     max-width: 1140px;
     margin: 0 auto;
+    text-align: center;
 }
-
 .header-bar {
     text-align: center;
-    font-size: 360%;
-    line-height: 0.50;
-    margin-bottom: 50px;    
+    font-size: 5em;
+    line-height: 2px;
+    margin-bottom: 18px;
     color: #ff0066;
 }
-
 img {
     width: 400px;
     height: 420px;    
 }
-
 h1 {
     margin-bottom: 30px;
     color:  #1B242F;
@@ -63,18 +60,23 @@ h1 {
     letter-spacing: 3px;
     margin-bottom: 90px;
 }
-
 h2 {
     font-size: 180%;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    line-height: 1px;
     margin-top: 50px;
 }
-
 h3 {
     letter-spacing: 2px;
     font-weight: bold;
+}
+
+.section-header-bar {
+    color: #ff0066;
+    font-size: 4.5em;
+    margin-bottom: 50px;
 }
 
 /*----------LINKS-----------*/
@@ -117,7 +119,6 @@ a:visited {
     box-shadow: 0 2px 2px  #ff0066;
     z-index: 9999;
 }
-
 .sticky .main-nav {
     display: block;
     margin: 20px;    
@@ -125,7 +126,6 @@ a:visited {
     list-style: none;
     color: #fff;   
 }
-
 .sticky .mobile-nav {
     display: none;
 }
@@ -134,7 +134,6 @@ a:visited {
     display: inline-block;
     margin-left: 40px;
 }
-
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     padding: 8px 0;
@@ -146,7 +145,6 @@ a:visited {
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
 }
-
 .sticky .main-nav li a:hover,
 .sticky .main-nav li a:active {
     color: #ff0066;
@@ -168,7 +166,6 @@ a:visited {
     color: #fff;
     font-weight: normal;
 }
-
 
 /***************************/
 /*         HEADER          */
@@ -214,8 +211,6 @@ header .btn {
     margin-bottom: 1.5em;
     box-shadow: 5px 10px 20px #00e6e6;
 }
-
-
 /***************************/
 /*         ICONS           */
 /***************************/
@@ -230,8 +225,10 @@ header .btn {
     color: #fff;
 }
 .view-work a:hover {
-    color: #00cccc;
+    font-weight: bold;
+    /* background-color:  #00e6e6; */
     font-size: 1.3em;
+    box-shadow: 3px 10px 60px #00e6e6;
 }
 .fas, .far, ion-icon {
     margin-top: 10px;
@@ -259,6 +256,10 @@ header .btn {
     display: inline-block;
     margin: 0 20px;
     box-shadow: 5px 5px 8px #00e6e6;
+    position: relative;
+}
+.intro-contacts a div:hover {
+    box-shadow: 5px 5px 30px#03fcfc;
 }
 .intro-contacts a{
     width: 85px;
@@ -282,7 +283,6 @@ header .btn {
     height: 55px;
     margin: 0 auto; 
     background:  #00cccc;
-    position: relative;
 }
 .hexagon:before {
     content: "";
@@ -314,7 +314,6 @@ header .btn {
 .col-hexa {
     text-align: center;
 }
-
 .hexa-desc {
     text-align: center;
 }
@@ -351,17 +350,18 @@ header .btn {
     grid-template-columns: 1fr 2fr;
     margin-top: 40px;
 }
-.profile h3 {
+.about-me h3 {
     text-align: center;
     padding: 10px 15px;    
-    /* background-color: #00cccc; */
     text-transform: uppercase;
     margin-bottom: 15px;
     box-shadow: 10px 10px 20px #00e6e6 inset;
 }
+.about-me {
+    margin-left: 20px;
+}
 .skills li {
     list-style-type: none;
-    /* background-color:  #00cccc; */
     padding: 10px;
     box-shadow: 5px 10px 18px #00cccc;
 }
@@ -387,10 +387,11 @@ header .btn {
     flex-wrap: wrap;
 }
 .card {
+    position: relative;
     display: flex;
     flex: 33.33333333333333%; 
     max-width: 33.33333333333333%; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.6);   
 }
 .card-desc{
     visibility: hidden;
@@ -413,6 +414,7 @@ header .btn {
    background-color:  #ccffff;
    box-shadow: 3px 5px 8px #ff0066;
 }
+.card-desc button a,
 .card-desc button a:link,
 .card-desc button a:active {
     color: #444649;
@@ -439,13 +441,15 @@ header .btn {
 .card:hover .card-desc {
     visibility: visible;
 }
-.card:hover .card-title {
-    animation: fadeInDown; 
-    animation-duration: 1s;
-}
 .card:hover .card-button {
-   animation: fadeInUp;
-   animation-duration: 1s;
+    position: relative; 
+    bottom: -50px;
+    animation: slideUp 0.6s linear forwards;  
+}
+.card:hover .card-title {
+    position: relative; 
+    top: -50px;
+    animation: slideDown 0.6s linear forwards;  
 }
 .card:hover {
     background-color: #ccffff;
@@ -459,11 +463,9 @@ header .btn {
     width: 700px;
     height: 420px;
 }
-
 .slides-content img {
     width: 100%;
 }
-
 .modal-content {
     width: 100%;
     position: relative;
@@ -477,11 +479,11 @@ header .btn {
 .slides-content-desc button {
     text-transform: uppercase;
     font-size: 0.7rem;
+    color: #253241;
     padding: 8px 40px;
     margin-top: 15px;
     background-color: #ff0066;
     border: none;
-    color: #fff;
 }
 .slides-content-desc p {
     text-align: justify;
@@ -534,7 +536,7 @@ hr:nth-of-type(1) {
 /*       BLOGS         */
 /***********************/ 
 .section-blogs {
-    text-align: left;
+    text-align: center;
     line-height: 1.4;
 }
 .blogs {
@@ -551,6 +553,8 @@ hr:nth-of-type(1) {
     color: #1B242F;
 }
 .blogs hr {
+    position: relative;
+    left: 50%;
     color: #1B242F;
     width:20%;
     margin: 15px 0;
@@ -568,6 +572,7 @@ hr:nth-of-type(1) {
 }
 .blog-html-header>h3 {
     font-size: 1.5em;
+    color: #fff;
 }
 .blog-html p {
     line-height: 1.5;
@@ -675,131 +680,14 @@ footer a div:hover {
     font-weight: normal;
 }
 
-/***********************/
-/*     ANIMATIONS      */
-/***********************/   
+/***************************/
+/*    ANIMATION KEYFRAMES  */
+/***************************/      
 
-.js--hexa-1,
-.js--hexa-1b,
-.js--hexa-2,
-.js--hexa-2b,
-.js--hexa-3,
-.js--hexa-3b,
-.js--hexa-4,
-.js--hexa-4b,
-.js--wp-header,
-.js--wp-header2,
-.js--wp-header3,
-.js--wp-header4,
-.js--wp-header-bar,
-.js--wp-header-bar2,
-.js--wp-header-bar3,
-.js--wp-header-bar4,
-.js--profile-pic,
-.js--about-me,
-.js--card-1,
-.js--card-2,
-.js--card-3,
-.js--card-4,
-.js--card-5,
-.js--card-6,
-.js--blog-1,
-.js--blog-2,
-.js--blog-3,
-.js--contact-form {
-    opacity: 0;
-    animation-duration: .7s;
+@keyframes slideUp {
+    100%{bottom: 0;}
 }
-
-.js--hexa-1.animated, 
-.js--hexa-1b.animated, 
-.js--hexa-2.animated, 
-.js--hexa-2b.animated, 
-.js--hexa-3.animated, 
-.js--hexa-3b.animated, 
-.js--hexa-4.animated, 
-.js--hexa-4b.animated, 
-.js--wp-header.animated,
-.js--wp-header2.animated,
-.js--wp-header3.animated,
-.js--wp-header4.animated,
-.js--wp-header-bar.animated,
-.js--wp-header-bar2.animated,
-.js--wp-header-bar3.animated,
-.js--wp-header-bar4.animated,
-.js--profile-pic.animated,
-.js--about-me.animated,
-.js--card-1.animated,
-.js--card-2.animated,
-.js--card-3.animated,
-.js--card-4.animated,
-.js--card-5.animated,
-.js--card-6.animated,
-.js--blog-1.animated,
-.js--blog-2.animated,
-.js--blog-3.animated,
-.js--contact-form.animated {
-    opacity: 1;
+@keyframes slideDown {
+    100% {top: 0;}
 }
-
-.js--hexa-1, 
-.js--hexa-1b, 
-.js--blog-1,
-.js--contact-form
-.js--social-links {
-    animation-delay: 1s;
-}
-
-.js--hexa-2, 
-.js--hexa-2b, 
-.js--blog-2 {
-    animation-delay: 1.3s;
-}
-
-.js--hexa-3, 
-.js--hexa-3b, 
-.js--blog-3 {
-    animation-delay: 1.6s;
-}
-
-.js--hexa-4, 
-.js--hexa-4b {
-    animation-delay: 1.9s;
-}
-
-.js--profile-pic {
-    animation-delay: 2.2s;
-}
-
-.js--about-me {
-    animation-delay: 2.2s;
-}
-
-.js--card-1 {
-    animation-delay: 1s;
-}
-
-.js--card-2 {
-    animation-delay: 1.2s;
-}
-
-.js--card-3 {
-    animation-delay: 1.3s;
-}
-
-.js--card-4 {
-    animation-delay: 1.4s;
-}
-
-.js--card-5 {
-    animation-delay: 1.5s;
-}
-
-.js--card-6 {
-    animation-delay: 1.6s;
-}
-
-
-
-
 

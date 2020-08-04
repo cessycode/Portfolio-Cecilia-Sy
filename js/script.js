@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     /* for sticky-nav impt: waypoint is a plug-in */
-    $('.js--section-about').waypoint(function(direction) {
+    $('.section-about').waypoint(function(direction) {
         if(direction == "down"){
             $('nav').addClass('sticky');
         } else {
@@ -11,8 +11,8 @@ $(document).ready(function() {
 
     /* Mobile Navi */
     $('.js--mobile-nav').click(function() {
-        var main = $('.js--main-nav'),
-            icon = $('.js--mobile-nav i');
+        var main = $('.main-nav'),
+            icon = $('.mobile-nav i');
 
         main.slideToggle(200); //toggle between up and down scrolls
         
@@ -44,197 +44,6 @@ $(document).ready(function() {
         }
     });
    
-
-     /*******   ANIMATE HEADERS  *******/
-    $('.js--wp-header').waypoint(function(direction) {
-        $('.js--wp-header').addClass('animated slideInLeft');
-    }, {
-        offset: '50%'
-    });
-
-    $('.js--wp-header-bar').waypoint(function(direction) {
-        $('.js--wp-header-bar').addClass('animated slideInRight');
-    }, {
-        offset: '50%'
-    });
-
-    $('.js--wp-header2').waypoint(function(direction) {
-        $('.js--wp-header2').addClass('animated slideInLeft');
-    }, {
-        offset: '50%'
-    });
-
-    $('.js--wp-header-bar2').waypoint(function(direction) {
-        $('.js--wp-header-bar2').addClass('animated slideInRight');
-    }, {
-        offset: '50%'
-    });
-
-    $('.js--wp-header3').waypoint(function(direction) {
-        $('.js--wp-header3').addClass('animated slideInLeft');
-    }, {
-        offset: '50%'
-    });
-
-    $('.js--wp-header-bar3').waypoint(function(direction) {
-        $('.js--wp-header-bar3').addClass('animated slideInRight');
-    }, {
-        offset: '50%'
-    });
-
-    $('.js--wp-header4').waypoint(function(direction) {
-        $('.js--wp-header4').addClass('animated slideInLeft');
-    }, {
-        offset: '50%'
-    });
-
-    $('.js--wp-header-bar4').waypoint(function(direction) {
-        $('.js--wp-header-bar4').addClass('animated slideInRight');
-    }, {
-        offset: '50%'
-    });
-
-    /*******   ANIMATE HEXAGON  ********/
-
-    $('.js--hexa-1').waypoint(function(direction){
-        $('.js--hexa-1').addClass('animated flipInY');
-    }, {
-        offset: '50%'
-    });
-
-    $('.js--hexa-1b').waypoint(function(direction){
-        $('.js--hexa-1b').addClass('animated fadeIn');
-    }, {
-        offset: '50%'
-    });
-
-    $('.js--hexa-2').waypoint(function(direction){
-        $('.js--hexa-2').addClass('animated flipInY');
-    }, {
-        offset: '50%'
-    });
-
-    $('.js--hexa-2b').waypoint(function(direction){
-        $('.js--hexa-2b').addClass('animated fadeIn');
-    }, {
-        offset: '50%'
-    });
-
-    $('.js--hexa-3').waypoint(function(direction){
-        $('.js--hexa-3').addClass('animated flipInY');
-    }, {
-        offset: '80%'
-    });
-
-    $('.js--hexa-3b').waypoint(function(direction){
-        $('.js--hexa-3b').addClass('animated fadeIn');
-    }, {
-        offset: '80%'
-    });
-
-    $('.js--hexa-4').waypoint(function(direction){
-        $('.js--hexa-4').addClass('animated flipInY');
-    }, {
-        offset: '80%'
-    });
-
-    $('.js--hexa-4b').waypoint(function(direction){
-        $('.js--hexa-4b').addClass('animated fadeIn');
-    }, {
-        offset: '80%'
-    });
-
-    /*******    ANIMATE ABOUT ME AND PIC/LOGO      *******/
-
-    $('.js--profile-pic').waypoint(function(direction){
-        $('.js--profile-pic').addClass('animated fadeInLeftBig');
-    }, {
-        offset: '85%'
-    });
-
-    $('.js--about-me').waypoint(function(direction){
-        $('.js--about-me').addClass('animated fadeInRightBig');
-    }, {
-        offset: '85%'
-    });
-
-    /*********    ANIMATE PROJECTS     ********/
-    $('.js--card-1').waypoint(function(direction){
-        $('.js--card-1').addClass('animated fadeInUp');
-    }, {
-        offset: '80%'
-    });
-
-    $('.js--card-2').waypoint(function(direction){
-        $('.js--card-2').addClass('animated fadeInUp');
-    }, {
-        offset: '80%'
-    });
-
-    $('.js--card-3').waypoint(function(direction){
-        $('.js--card-3').addClass('animated fadeInUp');
-    }, {
-        offset: '80%'
-    });
-
-    $('.js--card-4').waypoint(function(direction){
-        $('.js--card-4').addClass('animated fadeInUp');
-    }, {
-        offset: '80%'
-    });
-
-    $('.js--card-5').waypoint(function(direction){
-        $('.js--card-5').addClass('animated fadeInUp');
-    }, {
-        offset: '80%'
-    });
-
-    $('.js--card-6').waypoint(function(direction){
-        $('.js--card-6').addClass('animated fadeInUp');
-    }, {
-        offset: '80%'
-    });
-
-
-    /*********     ANIMATE SLIDES       **********/
-    $('.js--modal-pic').addClass('animated fadeIn');
-    
-
-    /************   ANIMATE BLOGS ************/
-
-    $('.js--blog-1').waypoint(function(direction){
-        $('.js--blog-1').addClass('animated fadeIn');
-    }, {
-        offset: '80%'
-    });
-
-    $('.js--blog-2').waypoint(function(direction){
-        $('.js--blog-2').addClass('animated fadeIn');
-    }, {
-        offset: '80%'
-    });
-
-    $('.js--blog-3').waypoint(function(direction){
-        $('.js--blog-3').addClass('animated fadeIn');
-    }, {
-        offset: '85%'
-    });
-
-    /*********   ANIMATE CONTACT    *********/
-
-    $('.js--contact-form').waypoint(function(direction){
-        $('.js--contact-form').addClass('animated zoomIn');
-    }, {
-        offset: '70%'
-    });
-
-    /***********  ANIMATE FOOTER  **************/
-
-    $('.js--social-links').waypoint(function(direction){
-        $('.js--social-links').addClass('animated bounce');
-    }, {
-        offset: '80%'
-    });
 
     /*  NAVIGATION & BUTTON Scrolls */
 
